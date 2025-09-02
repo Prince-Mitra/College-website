@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: coral;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  
+
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.college-name .title {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #333;
+}
+
+.college-name .subtitle {
+  font-size: 1rem;
+  margin: 0;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .college-name .title {
+    font-size: 1.2rem;
+  }
+  .college-name .subtitle {
+    font-size: 0.8rem;
+  }
+}

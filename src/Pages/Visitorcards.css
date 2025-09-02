@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.visitor-card{
+    display: flex;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+   
+    text-align: center;
+   position: relative;
+   justify-content: space-evenly;
+    
+   
+    
+}
+.first-img{
+    display: flex;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    margin-left: 30px;
+   
+   
+    gap: 10px;
+     
+    
+}
+.Second-img{
+    display: flex;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+     padding: 10px;
+    
+    
+   gap: 10px
+}
+.third-img{
+    display: flex;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    padding: 10px;
+   
+    
+}
+.first-css ,.second-css,.third-css{
+     border-radius: 10px;
+     width: 350px;
+     height: 450px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+
+}

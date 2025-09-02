@@ -1,0 +1,32 @@
+
+
+   [
+  {
+    "Name": "DR. AMIT KUMAR ",
+    "Education": " Assistant Professor, DEPT. OF HINDI, ",
+    "MobileNumber": "7720955627 ",
+    "Email": "dr.amitkumar4391@gmail.com ",
+    "Experience": "5 years",
+    "Image": "/Image/Amit kumar.jpg"
+  },
+  {
+    "Name": "Ramjan Ali",
+    "Education": "Assistant Professor, Department of Commerce",
+    "MobileNumber": "9935682689",
+    "Email": "alizan90@gmail.com",
+    "Experience": "10 years",
+    "Image":"/Image/Ramjam Ali.jpg"
+
+  },
+  {
+    "Name": "Dr. Vivek Kumar Mahto ",
+    "Education": "Assistant Professor, Department of English",
+    "MobileNumber": "7909717403",
+    "Email": "kumarvivekmuri@gmail.com",
+    "Experience": "7 years",
+    "Image":"/Image/vivek sir.jpg"
+
+  }
+ 
+ 
+]

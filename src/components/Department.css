@@ -1,0 +1,8 @@
+.department {
+  text-align: center;      /* center the text horizontally */
+  font-size: 3rem;         /* make it big */
+  font-weight: bold;       /* bold text */
+  color: #333;             /* dark gray text */
+  font-family: Arial, sans-serif;
+  padding: 2rem 0;         /* spacing above and below */
+}

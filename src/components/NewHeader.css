@@ -1,0 +1,44 @@
+.news-container{
+    background-color: coral;
+    display: flex;
+    width: 100%;
+    height: 30px;
+   
+   
+   
+   
+   
+    
+}
+.News-tags{
+    display: flex;
+    background-color: red;
+    color: aliceblue;
+
+
+  
+
+
+
+
+
+
+}
+.marquee-container{
+    width: 100%;
+    height: 30px;
+    color: aliceblue;
+   
+
+}
+ @media (max-width: 768px){
+    .marquee-container{
+         width: 100%;
+        height: 30px;
+    }
+ }
+
+ @keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

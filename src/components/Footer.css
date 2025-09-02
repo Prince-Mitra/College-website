@@ -1,0 +1,135 @@
+.footer {
+  background: linear-gradient(120deg, #fdf7f0, #f8eee6);
+  color: #333;
+  padding: 50px 20px 0px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+  color: #0d3b66;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0d3b66;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f05a28;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 8px 0;
+}
+
+.footer-center ul li a {
+  text-decoration: none;
+  color: #0d3b66;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-center ul li a:hover {
+  color: #e76e45ab;
+}
+
+.footer-right iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: transparent; /* matches gradient above */
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+}
+
+.footer-bottom p:first-child {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0d3b66; /* college theme highlight */
+}
+
+.footer-bottom p:last-child {
+  font-size: 13px;
+  color: #f05a28; /* accent color for the "Designed with ❤️" */
+  font-style: italic;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    min-width: 100%;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    margin-bottom: 30px;
+  }
+
+  .footer-social a {
+    margin: 0 5px;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,61 @@
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 0; /* keep slider behind other components */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Navigation buttons */
+.left-btn, 
+.right-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* keep buttons above image but below navbar */
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+.left-btn button,
+.right-btn button {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-btn button:hover,
+.right-btn button:hover {
+  background-color: #f29305;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .left-btn button,
+  .right-btn button {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}

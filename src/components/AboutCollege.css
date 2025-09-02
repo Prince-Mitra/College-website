@@ -1,0 +1,67 @@
+.Main-div {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+/* Principal section */
+.About-College {
+  display: flex;
+  
+  margin-bottom: 40px;
+}
+
+.Principal-img {
+  
+  max-width: 300px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.img-pri {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.Principal-img h2 {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.Principal-img p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Flex container for AboutUS + OurMission */
+.sections-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;  /* Make both sections same height if possible */
+  gap: 20px;
+  flex-wrap: wrap;       /* Stacks automatically if no space */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .Principal-img {
+    max-width: 90%;
+  }
+  .Principal-img h2 {
+    font-size: 1.2rem;
+  }
+  .Principal-img p {
+    font-size: 0.9rem;
+  }
+
+  /* On small screens sections stack vertically */
+  
+}

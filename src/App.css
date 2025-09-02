@@ -1,0 +1,9 @@
+html, body {
+  overflow-x: hidden;   /* No horizontal scroll */
+  width: 100%;
+}
+*{
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}

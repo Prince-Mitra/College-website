@@ -1,0 +1,40 @@
+.course-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 60px;
+  margin: 10px;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color:white;
+
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  color: #080cda;
+}
+
+p {
+  color: #a40434;
+}
+.course-name{
+    margin-top: 25px;
+    text-align: center;
+    background-color:#f5f5f5;
+    
+}
+.Tilte-css{
+    color: #0077cc;
+}

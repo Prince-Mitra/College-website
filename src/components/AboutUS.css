@@ -1,0 +1,46 @@
+.About-us {
+  flex: 1 1 45%;                 /* Allows side-by-side layout inside flex containers */
+  max-width: 1000px;             /* Prevents overly wide blocks on huge screens */
+  margin: 0 auto 40px auto;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 300px;              /* Ensures cards don't shrink too small in flex */
+}
+
+
+.About-us strong {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+.About-us-content h4 {
+  font-weight: normal;
+}
+
+.About-us-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .About-us {
+    flex: 1 1 100%;              /* Forces full-width stacking on mobile */
+    padding: 20px 15px;
+    margin: 0 10px 20px 10px;
+  }
+  .About-us strong {
+    font-size: 1.5rem;
+  }
+  .About-us-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}

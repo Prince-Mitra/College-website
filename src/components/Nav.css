@@ -1,0 +1,123 @@
+.navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Default horizontal nav for desktop */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-menu li a.active {
+  color: white;
+  color:#333 /* highlight background */
+
+}
+
+.nav-menu li:hover {
+  color: #0077cc;
+}
+
+/* Hamburger icon hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 28px;
+  height: 22px;
+  gap: 5px;
+  z-index: 1100; /* above menu */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animate hamburger to X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile nav hidden by default */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 15px;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop nav by default on mobile */
+  .nav-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Hide horizontal nav on mobile */
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 15px;
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transform: translateX(110%); /* push fully off-screen */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0); /* slide into view */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Override desktop default flex to avoid visible menu */
+  .navbar-right .nav-menu {
+    display: flex;
+  }
+}

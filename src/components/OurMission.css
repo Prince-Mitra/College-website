@@ -1,0 +1,86 @@
+.About-us {
+  flex: 1 1 45%;                 /* Allows side-by-side layout in flex container */
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 300px;
+}
+
+.About-us strong {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #28a745;                /* Green heading for Our Mission */
+  margin-bottom: 20px;
+}
+
+.About-us-content h4 {
+  font-weight: normal;
+}
+
+.p-tag {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .About-us {
+    flex: 1 1 100%;              /* Full width on mobile */
+    padding: 20px 15px;
+    margin: 0 10px 20px 10px;
+  }
+  .About-us strong {
+    font-size: 1.5rem;
+  }
+  .p-tag {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+.About-us {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 300px;
+  /* REMOVE max-width and margin auto to allow flex to control layout */
+}
+
+.About-us strong {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #0077cc; /* use #28a745 for OurMission */
+  margin-bottom: 20px;
+}
+
+.About-us-content p,
+.p-tag {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .About-us {
+    flex: 1 1 100%;
+    padding: 20px 15px;
+    margin: 0 10px 20px 10px;
+  }
+  .About-us strong {
+    font-size: 1.5rem;
+  }
+  .About-us-content p,
+  .p-tag {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}

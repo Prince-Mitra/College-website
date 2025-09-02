@@ -1,0 +1,33 @@
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  .Main-card{
+    width: 100%;
+    height: 100%;
+    background-color:#f4f4f4;
+    padding-left: 20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.Our-teacher{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.our-tacher-css{
+    background-color: #f4f4f4;
+    
+}
+.paragrap{
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+     font-weight: normal;
+     font-size: x-large;
+     padding-bottom: 20px;
+     color:#a40434;
+}
