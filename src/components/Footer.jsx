@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
           <div className="footer-contact">
             <p><FaPhone /> +91 12345 67890</p>
-            <p><FaEnvelope /> info@modelcollege.edu.in</p>
+            <p><FaEnvelope /> modelclgrjl@gmail.com</p>
           </div>
           <div className="footer-social">
             <a href="#"><FaFacebookF /></a>
